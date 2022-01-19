@@ -4,9 +4,13 @@ The `remote` server exposes Button component. The `consumer` app uses the compon
 
 
 ## How to run:
-Open two terminals and run `$npm run dev` in both `remote` and `consumer` directories
+Run the following in the terminal:
+```
+$ yarn install
+$ yarn dev
+```
 
-Then open localhost:3000 in the browser - you should be able to see the button `Crispy Button` rendered from the shell repo
+Then open [localhost:3000](http://localhost:3000) in the browser - you should be able to see the button `Remote Button` rendered from the `remote` server
 
 ## Troubleshooting:
 If the installation fails for `@module-federation/nextjs-mf` package - you need to purchase a license at [privjs.com](https://app.privjs.com/buy/packageDetail?pkg=@module-federation/nextjs-mf)

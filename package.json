@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "workspaces": [
+    "./consumer",
+    "./remote"
+  ],
+  "scripts": {
+    "dev": "concurrently \"cd consumer; npm run dev\" \"cd remote; npm run dev\"",
+    "build": "concurrently \"cd consumer; npm run build\" \"cd remote; npm run build\"",
+    "serve": "concurrently \"cd consumer; npm run start\" \"cd remote; npm run start\""
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

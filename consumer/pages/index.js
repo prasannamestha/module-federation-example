@@ -15,7 +15,7 @@ export default function Home() {
     <div className={styles.container}>
       <main className={styles.main}>
         <p>This app consumes components from remote server <Link href="http://localhost:3001"><a>http://localhost:3001</a></Link></p>
-        <RemoteButton>Remote Button!</RemoteButton>
+        <RemoteButton onClick={() => window.alert('You clicked a remote button!')}>Remote Button!</RemoteButton>
       </main>
     </div>
   )
